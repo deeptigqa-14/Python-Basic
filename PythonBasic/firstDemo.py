@@ -11,3 +11,4 @@ a, str, list1 = 4, "overwrite", ["a", "b", "c"]
 print("value is " + str)
 print("{} {} {}".format("Print string and integer together ",str ,a))
 print(type(a))
+print (type(str))
