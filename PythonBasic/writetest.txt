@@ -1,0 +1,7 @@
+fig
+elderberry
+date
+cherry
+banana
+apple
+This is new line at the end of the file

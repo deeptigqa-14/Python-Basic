@@ -28,4 +28,6 @@ dynamic_dic["Age"] = 25
 dynamic_dic["Height"] = 5.0
 dynamic_dic["female"] = True
 print(dynamic_dic)
+dynamic_dic["NewValue"] = "New Value"
+print(dynamic_dic)
 

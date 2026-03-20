@@ -5,6 +5,7 @@ def greetme(name):
 # call the function
 def addon(a, b):
     print (f"Sum is : {a+b}")
+    return a+b
 
 greetme("Deepti")
-addon(5, 10)
+print (addon(5, 10))

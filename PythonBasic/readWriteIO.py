@@ -1,24 +1,32 @@
 # reading
 file = open("test.txt")
-#content =(file.read(10)) #will print first 10 characters including lines , space is treated as character
+#print(file.read(20)) # read first 20 characters
+file.close()
 
-#Line1 = file.readline() # will print 1st line
-#Line2 = file.readline() # will print 2nd line
-
-#line = file.readline()
-#while line !="":
- #   print(line)
- #   line = file.readline()
+file = open("test.txt")
+# print("Read with loop")
+# line = file.readline()
+# while line !="":
+#     print(line)
+#     line = file.readline()
 
 #for line in file.readlines():
  #   print(line)
 
+for line in file.readlines():
+    print(line)
+
 file.close()
 
-# writing
+#writing
 with open("test.txt", "r") as reader:
-    content = reader.readlines()
-   # reversed(content)
-with open('test.txt', 'w') as writer:
+    content = reader.readlines() # store the content of the file in a list
+    sorted(content)
+    print(content)
+    reversed(content)
+    print(content)
+with open('writetest.txt', 'w') as writer:
     for line in reversed(content):
         writer.write(line)
+    writer.write("This is new line at the end of the file")
+    
