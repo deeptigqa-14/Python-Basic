@@ -6,6 +6,13 @@ def greetme(name):
 def addon(a, b):
     print (f"Sum is : {a+b}")
     return a+b
+# function to greet user
+def greetuser(name):
+    print("Hello," + name+"! Welcome to Python programming.")
 
 greetme("Deepti")
 print (addon(5, 10))
+
+name= input("Enter your name : ")
+greetuser(name)
+
