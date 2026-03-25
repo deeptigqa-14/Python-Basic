@@ -31,3 +31,11 @@ print(dynamic_dic)
 dynamic_dic["NewValue"] = "New Value"
 print(dynamic_dic)
 
+
+person= ("Rahul", 25, 5.9)
+print(f"Age: {person[1]}")
+
+try:
+    person[0] = "Deepti" # updating value of existing key
+except Exception as e:
+    print(f"Error: {e} - Tuples are immutable.")
